@@ -38,3 +38,6 @@ From within `~/dotfiles` run `stow polybar`
 
 ### sxhkd
 From within `~/dotfiles` run `stow sxhkd`
+
+### rofi
+From within `~/dotfiles` run `stow rofi`
