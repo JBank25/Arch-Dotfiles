@@ -1,0 +1,13 @@
+# Lock screen using windows key
+super + l
+	$TERMINAL i3lock
+
+# Increase brightness by 10%, have to install brightnessctl
+# for this to work
+# super + b
+	# brightnessctl set +10%
+
+# Decrease brightness by 10%, have to install brightnessctl
+# for this to work
+# super + b
+# 	$TERMINAL brightnessctl set 10%-

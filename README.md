@@ -35,3 +35,6 @@ To symlink this to `~/.zshrc`
 
 ### polybar
 From within `~/dotfiles` run `stow polybar`
+
+### sxhkd
+From within `~/dotfiles` run `stow sxhkd`
