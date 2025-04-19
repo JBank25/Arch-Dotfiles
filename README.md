@@ -32,3 +32,6 @@ Navigated to `~/dotfiles`
 Then ran `stow -t ~ zsh`
 
 To symlink this to `~/.zshrc`
+
+### polybar
+From within `~/dotfiles` run `stow polybar`
