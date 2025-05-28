@@ -1,6 +1,8 @@
 bindkey -v
 autoload -U colors && colors
 autoload -Uz vcs_info
+# fixed the compinit issue thing. Not sure why
+autoload -Uz compinit; compinit
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
