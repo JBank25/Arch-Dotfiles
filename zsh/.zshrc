@@ -23,12 +23,11 @@ export FZF_CTRL_R_OPTS="
 --color header:italic
 --header 'Press CTRL-Y to copy command into clipboard'"
 
+# for taskfiles
+alias task='go-task'
+eval "$(go-task --completion zsh)"
+
 # No plugin manager needed for this, just use pacckage manager
 # or clone git repo and add the line below or some variation
 # of it
-echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
