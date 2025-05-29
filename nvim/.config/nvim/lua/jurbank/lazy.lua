@@ -29,18 +29,11 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-	-- tokyo theme
+	-- catpuccin theme
 	{
-		"folke/tokyonight.nvim",
-		config = function() vim.cmd.colorscheme "tokyonight" end
-	},
-	{
-		'nvim-telescope/telescope.nvim', tag = '0.1.8',
-		-- or                              , branch = '0.1.x',
-		dependencies = { 'nvim-lua/plenary.nvim' }
-	},
-	{
-		{"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
+		"catppuccin/nvim", 
+		name = "catppuccin", 
+		priority = 1000,
 	},
     -- import your plugins
     { import = "jurbank/plugins" },
