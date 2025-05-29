@@ -41,3 +41,11 @@ From within `~/dotfiles` run `stow sxhkd`
 
 ### rofi
 From within `~/dotfiles` run `stow rofi`
+
+### nvim
+
+Navigated to `~/dotfiles` and ran:
+
+`stow nvim`
+
+To symlink these files to `~/.config/nvim`
