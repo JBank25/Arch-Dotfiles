@@ -39,6 +39,24 @@ return {
 			-- Looks like if we want specific functinoality we will have to
 			-- set things like this
 			vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+			vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+			vim.keymap.set({ 'n', 'v' }, '<leader>ca' ,vim.lsp.buf.code_action, opts)
+			-- This was added to remove the big red "E" that would show up to the left 
+			-- of the line numbers in the editor when an error had occurred
+			vim.diagnostic.config({
+			    signs = {
+				text = {
+				    [vim.diagnostic.severity.ERROR] = '',
+				    [vim.diagnostic.severity.WARN] = '',
+				}
+			    }
+			})
+			-- Allows you to toggle error reporting lines in the editor. Without these
+			-- all you are given is a red line under the line where the error occurs
+			vim.keymap.set('n', 'gK', function()
+			  local new_config = not vim.diagnostic.config().virtual_lines
+			  vim.diagnostic.config({ virtual_lines = new_config })
+			end, { desc = 'Toggle diagnostic virtual_lines' })
 		end
 	}
 }
