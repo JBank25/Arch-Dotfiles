@@ -4,10 +4,10 @@
 -- than the black one you are used to. Comment out the last
 -- line and then reopen nvim to see
 
-function ColorMyPencils(color)
-	color = color or "tokyonight"
-	vim.cmd.colorscheme(color)
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
-ColorMyPencils()
+-- function ColorMyPencils(color)
+	-- color = color or "tokyonight"
+	-- vim.cmd.colorscheme(color)
+	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- end
+-- ColorMyPencils()
