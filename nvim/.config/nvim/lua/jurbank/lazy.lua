@@ -1,5 +1,3 @@
-print("jurbank lazy lua")
-
 -- Bootstrap lazy.nvim
 -- check for repo path and clone if it does not exist
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
