@@ -14,6 +14,15 @@ vim.opt.hlsearch = false
 -- we move down 
 vim.opt.scrolloff = 8
 
+-- Tab key inserts spaces, not tab chars
+vim.cmd("set expandtab")
+-- Tab chars display as 2 spaces wide
+vim.cmd("set tabstop=2")
+-- Tab/Backspace inserts/removes 2 spaces
+vim.cmd("set softtabstop=2")
+-- Indenting/unindenting uses 2 spaces
+vim.cmd("set shiftwidth=2")
+
 
 
 
