@@ -34,7 +34,11 @@ return {
 	-- https://www.reddit.com/r/neovim/comments/r0ndez/clangd_conan/
 	{
 		"neovim/nvim-lspconfig",
+		dependencies = { "saghen/blink.cmp" },
+
 		config = function()
+      local	capabilities = require("blink.cmp").get_lsp_capabilities()
+      require("lspconfig").lua_ls.setup { capabilities = capabilities }
 			vim.lsp.enable("clangd")
 			-- Looks like if we want specific functinoality we will have to
 			-- set things like this
