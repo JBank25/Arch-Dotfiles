@@ -1,3 +1,17 @@
+### Install New Package
+
+Create new file with a name that is reflective of the package
+you are installing `git-plugins` for example will contain
+`fugitive` and other git related packages
+
+Within the file add a lua table with the short URL you wish to
+install for [fugitive](https://github.com/tpope/vim-fugitive), this will look like:
+```
+return {
+    "tpope/vim-fugitive"
+}
+```
+
 ### indent-blankline
 
 Draws a line going down the editor at a given line of code to
