@@ -10,7 +10,7 @@ return {
 			-- Table of sources
 			sources = {
 				-- https://github.com/nvimtools/none-ls-extras.nvim/tree/main
-				-- https://stackoverflow.com/questions/78108133/issue-with-none-ls-configuration-error-with-eslint-d 
+				-- https://stackoverflow.com/questions/78108133/issue-with-none-ls-configuration-error-with-eslint-d
 				require("none-ls.diagnostics.cpplint"),
 				-- :MasonInstall stylua for lua formatter
 				null_ls.builtins.formatting.stylua,
